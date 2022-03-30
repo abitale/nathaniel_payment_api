@@ -5755,11 +5755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\CSharp\\finalproject1\\ReEdit\\PaymentApi\\PaymentApi.csproj",
+      "projectUniqueName": "D:\\Github\\CSharp\\finalproject1\\GitProject\\PaymentApi\\PaymentApi.csproj",
       "projectName": "PaymentApi",
-      "projectPath": "D:\\Github\\CSharp\\finalproject1\\ReEdit\\PaymentApi\\PaymentApi.csproj",
+      "projectPath": "D:\\Github\\CSharp\\finalproject1\\GitProject\\PaymentApi\\PaymentApi.csproj",
       "packagesPath": "C:\\Users\\Cycak\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\CSharp\\finalproject1\\ReEdit\\PaymentApi\\obj\\",
+      "outputPath": "D:\\Github\\CSharp\\finalproject1\\GitProject\\PaymentApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cycak\\AppData\\Roaming\\NuGet\\NuGet.Config",
