@@ -117,7 +117,7 @@ namespace PaymentApi
                 .AllowAnyMethod()
                 .AllowAnyHeader());
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             var options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
