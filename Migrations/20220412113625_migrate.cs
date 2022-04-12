@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace PaymentApi.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class migrate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -55,7 +55,7 @@ namespace PaymentApi.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     cardOwnerName = table.Column<string>(type: "text", nullable: true),
                     cardNumber = table.Column<string>(type: "text", nullable: true),
-                    expirationDate = table.Column<string>(type: "text", nullable: true),
+                    expirationDate = table.Column<DateTime>(type: "datetime", nullable: false),
                     securityCode = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>

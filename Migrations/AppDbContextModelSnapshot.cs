@@ -225,8 +225,8 @@ namespace PaymentApi.Migrations
                     b.Property<string>("cardOwnerName")
                         .HasColumnType("text");
 
-                    b.Property<string>("expirationDate")
-                        .HasColumnType("text");
+                    b.Property<DateTime>("expirationDate")
+                        .HasColumnType("datetime");
 
                     b.Property<string>("securityCode")
                         .HasColumnType("text");

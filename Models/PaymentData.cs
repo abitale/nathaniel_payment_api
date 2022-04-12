@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System;
 
 namespace PaymentApi.Models
 {
@@ -8,7 +9,7 @@ namespace PaymentApi.Models
         public int paymentDetailsId { get; set; }
         public string cardOwnerName { get; set; }
         public string cardNumber { get; set; }
-        public string expirationDate { get; set; }
+        public DateTime expirationDate { get; set; }
         public string securityCode { get; set; }
     }
 }
