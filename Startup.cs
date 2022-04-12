@@ -36,7 +36,7 @@ namespace PaymentApi
         {
 
             services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
-
+            services.AddCors();
             services.AddDbContext<AppDbContext>(options =>
             options.UseMySQL(
                 Configuration.GetConnectionString("DefaultConnection")
@@ -111,6 +111,11 @@ namespace PaymentApi
 
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PaymentApi v1"));
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             app.UseHttpsRedirection();
 
