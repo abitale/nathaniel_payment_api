@@ -55,7 +55,7 @@ namespace PaymentApi.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     cardOwnerName = table.Column<string>(type: "text", nullable: true),
                     cardNumber = table.Column<string>(type: "text", nullable: true),
-                    expirationDate = table.Column<DateTime>(type: "datetime", nullable: false),
+                    expirationDate = table.Column<string>(type: "text", nullable: true),
                     securityCode = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>

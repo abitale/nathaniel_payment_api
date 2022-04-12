@@ -9,7 +9,7 @@ using PaymentApi.Data;
 namespace PaymentApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220412113625_migrate")]
+    [Migration("20220412143922_migrate")]
     partial class migrate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -227,8 +227,8 @@ namespace PaymentApi.Migrations
                     b.Property<string>("cardOwnerName")
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("expirationDate")
-                        .HasColumnType("datetime");
+                    b.Property<string>("expirationDate")
+                        .HasColumnType("text");
 
                     b.Property<string>("securityCode")
                         .HasColumnType("text");
